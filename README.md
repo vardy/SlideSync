@@ -38,6 +38,7 @@ After building, use the `run` command on all subsequent runs.
 **Without Docker:**
 
 ```
+$ pip install -r requirements.txt
 $ python3.7 get_images.py
 ```
 
