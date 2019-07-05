@@ -5,7 +5,7 @@ FROM node:10
 WORKDIR /usr/src/slide_server
 
 # Installing dependencies
-COPY package.json ./
+COPY package*.json ./
 RUN npm install
 
 # Copying source into project
