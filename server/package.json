@@ -1,0 +1,16 @@
+{
+  "name": "yayaslideserver",
+  "version": "1.0.0",
+  "description": "Server for presenting REST API for accessing images used in slide shows.",
+  "main": "./init.js",
+  "scripts": {
+    "start": "node --harmony ./init.js",
+    "test": ""
+  },
+  "author": "Jarred Vardy",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  }
+}
