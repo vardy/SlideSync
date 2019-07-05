@@ -21,12 +21,19 @@ The IP address of the server running the SlideSync server service is hard-coded.
 
 ### Building
 
+(Building with docker is not recommended)
+
 **With Docker:**
+
+*Note:* localhost connections will not work from within a docker container.
 
 ```
 $ docker build -t slide_client .
-$ docker run slide_client # Call this command on all subsequent runs
+$ docker run -v /path/to/images/:/usr/src/slide_client/images/ slide_client
 ```
+
+Replace `/path/to/images/` with the absolute path to your local images directory (ie. the images directory where the source-code is).    
+After building, use the `run` command on all subsequent runs.
 
 **Without Docker:**
 
